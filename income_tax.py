@@ -1,8 +1,8 @@
 from format_currency import cur
 
-BASIC_RATE = 0.2
-HIGHER_RATE = 0.4
-ADDITIONAL_RATE = 0.45
+BASIC_RATE = 0.2 # 20%
+HIGHER_RATE = 0.4 # 40%
+ADDITIONAL_RATE = 0.45 #45%
 
 TAX_CODE_OFFSET = 9
 
