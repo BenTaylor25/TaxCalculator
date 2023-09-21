@@ -38,9 +38,6 @@ def tax_calculator(salary: float):
     print()
 
 
-    return subtotal - income_tax - employee_national_insurance
-
-
 if __name__ == "__main__":
     salary = float_input("Yearly Salary: ")
 
