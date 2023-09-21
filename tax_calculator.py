@@ -1,11 +1,11 @@
 from float_input import float_input
 from income_tax import calc_income_tax
 from national_insurance import calc_nat_ins
-
+from salary_sacrifice import calc_salary_sacrifice
 
 def tax_calculator(salary: float):
     gross = salary
-    salary_sacrifice = 0
+    salary_sacrifice = calc_salary_sacrifice(gross)
     subtotal = salary - salary_sacrifice
 
     income_tax = calc_income_tax(subtotal)
