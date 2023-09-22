@@ -13,10 +13,6 @@ being a prerequisite).
 calculations**, but rather to help people to understand how
 tax works.
 
-I understand that there may be non-programmers that wish to
-use this resource, so I have added comments (notes ignored
-by the code) to clarify what the code is doing.
-
 For all of the values I have tested, my calculations align with this site: https://listentotaxman.com/  
 (Please raise an issue in the [Issues](https://github.com/BenTaylor25/TaxCalculator/issues) tab if you find an input that gives a different output).
 
