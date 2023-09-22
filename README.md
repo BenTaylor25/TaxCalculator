@@ -16,3 +16,21 @@ real calculations.**
 I understand that there may be non-programmers that wish to
 use this resource, so I have added comments (notes ignored
 by the code) to clarify what the code is doing.
+
+
+## The 'Basics'
+
+If you are working a job with an annual salary of £100,000,
+you don't actually see £100,000 in your bank account every year.
+
+Income Tax and National Insurance are deducted from your 'gross' 100k.
+
+`Take_Home = Gross_Salary - Income_Tax - Employee_National_Insurance`  
+With a Gross Salary of £100,000 this is about `£67,053.00`.
+
+Not only that, but your employment will cost your company more than £100,000.
+This is because companies also have to pay National Insurance, however the
+company's National Insurance contribution is calculated differently.
+
+`Company_Cost = Gross_Salary + Company_National_Insurance`  
+With a Gross Salary of £100,000 this is about `£112,544.20`.
