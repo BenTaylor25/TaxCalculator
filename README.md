@@ -44,9 +44,9 @@ The government website (https://www.gov.uk/income-tax-rates) suggests the follow
 ![image](https://github.com/BenTaylor25/TaxCalculator/assets/97246704/4d21e5b9-1504-4b30-9a83-8ab77aacf398)  
 Unfortunately it is nowhere near as simple as this.
 
-These bands are dependent on your Tax Band
+These bands are dependent on your Tax Code
 (https://www.gov.uk/tax-codes/what-your-tax-code-means).  
-Your Tax Band is determined by a number of factors; examples:
+Your Tax Code is determined by a number of factors; examples:
 1. If you have multiple sources of income, they will use different bands.
 1. If you are married you can 'donate' excess tax-free allowance to your partner.
 
