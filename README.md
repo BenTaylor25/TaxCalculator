@@ -77,5 +77,32 @@ In other words, notice that the Basic Rate band has a range of £37,700 (£50,27
 Let's look at an example:
 ```
 Gross_Salary = £110,000
+PERSONAL_ALLOWANCE_MAX = £12,579
 
+Gross_Over_100k = Gross_Salary - £100,000 (if Gross_Salary > £100,000, otherwise 0)
+    = £10,000
+PA_Loss = round_down(Gross_Over_100k / 2)
+    = £5,000
+Personal_Allowance = PERSONAL_ALLOWANCE_MAX - PA_Loss
+    = £12,579 - £5,000
+    = £7,579
+Blind_Allowance = 0
+Tax_Free_Allowance = Personal_Allowance + Blind_Allowance
+    = £7,579 + £0
+    = £7,579
+
+Bands Formula:
+£0 - Tax_Free_Allowance at 0%
+Tax_Free_Allowance - (50,279 - PA_Loss) at 20%
+(50,279 - PA_Loss) - £125,140 at 40%
+>£125,140 at 45%
+
+Bands:
+£0 - £7,579 at 0%
+£7,579 - $45,279 at 20%
+£45,279 - £125,140 at 40%
+>£125,140 at 45%
 ```
+(All-caps values mean independent of Gross_Salary).
+
+
