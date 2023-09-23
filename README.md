@@ -269,6 +269,16 @@ seemed to add up when National Insurance was calculated from Gross.
 I'm not sure if this is an issue with their calculator,
 or if I'm missing something.
 
+You may notice from the contents of the `salary_sacrifice.py` file
+that this has not been implemented in my calculator.  
+I feel that Income Tax and National Insurance are applicable to
+more people. Plus, Salary Sacrifice is applied differently depending
+on what type of sacrifice it is (Company Car scheme, etc.)  
+I don't feel inclined to add this level of complexity for a set of
+features that most people aren't interested in. I also don't feel
+confident in my knowledge of Salary Sacrifice to provide any
+explanation further to what is here.
+
 
 ### Pension schemes
 
