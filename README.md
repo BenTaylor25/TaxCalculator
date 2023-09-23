@@ -231,3 +231,76 @@ Since there is only once band:
 Company_National_Insurance = £13,924.20
 
 ![image](https://github.com/BenTaylor25/TaxCalculator/assets/97246704/4bb2a189-111c-460b-a72b-75e9be87aa89)
+
+
+## Salary Sacrifice
+
+Salary Sacrifice is basically where you buy something with your Gross
+Salary before tax is applied. This can allow you to pay less in tax,
+and effectively bring home more.  
+Of course - because it's tax - it's not as simple as this; there is
+usually tax applied to the Salary Sacrifice benefit in some way,
+but it is often still worth it.
+
+Note: you cannot sacrifice enough of your salary to take you below
+national minimum wage.
+
+Types of Salary Sacrifice include:
+1. Pension schemes,
+1. Company Car schemes,
+1. Private Healthcare schemes,
+1. Gym Membership schemes.
+
+
+### Impact on Income Tax and National Insurance
+
+I am using the term "Subtotal" for post-sacrifice, pre-tax figure.  
+`Subtotal = Gross_Salary - Sacrificed_Amount`
+
+This changes the Net Salary formula to:  
+`Take_Home = Subtotal - Income_Tax - National_Insurance`
+
+Income Tax is calculated based on the Subtotal.
+
+National Insurance (Employee and Company) *should* also be calculated
+based on the Subtotal, however when I did some testing with the
+ListenToTaxman site's `Pension Contribution` field, the numbers only
+seemed to add up when National Insurance was calculated from Gross.  
+I'm not sure if this is an issue with the calculator,
+or if I'm missing something.
+
+
+### Pension schemes
+
+This may depend on the particular scheme, but it seems to me that
+you don't pay any tax on sacrifice, however you pension claims
+are considered a source of income, so you pay Income Tax, and
+possibly National Insurance contribution then.
+
+
+### Company Car schemes
+
+Company Car schemes seem to decrease your Gross Salary by the
+annual P11D (recommended price) value of the car you wish to
+buy. They invoke a BIK Tax (Benefit in Kind) which is deducted
+in the same place as Income Tax and National Insurance.
+
+`Take_Home = Gross_Salary - Income_Tax - National_Insurance - BIK_Tax`
+
+Every car has a P11D and a BIK percentage
+(based off of emmissions for fuel and hybrid cars, or range for electric cars)
+These are multiplied together along with your highest income tax band
+to determine how much you pay.  
+https://www.fleetnews.co.uk/fleet-faq/what-are-the-current-bik-bands-/3/
+
+`BIK_Tax = P11D * BIK% * Highest_Tax_Band`  
+Since the P11D and BIK% are both dependent on the car,
+they may be multiplied together before being presented to you.  
+i.e. `BIK_Tax = Car_Tax_Value * Highest_Tax_Band`
+
+This means that someone earning £150,000 will pay more BIK_Tax than
+someone earning £30,000 for the same car.
+
+It also means that if the annual P11D brings you down a tax band,
+you make a huge saving over buying the car with your Net Salary
+without the scheme.
