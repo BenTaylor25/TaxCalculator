@@ -134,3 +134,6 @@ We have £0 in the 45% band.
 
 Our total Income Tax payment is the sum of these bands:  
 £0 + £7,540 + £25,888.40 + £0 = £33,428.40.
+
+If you run the calculator program you will see the same figures:  
+![image](https://github.com/BenTaylor25/TaxCalculator/assets/97246704/098c461a-3d10-483b-a316-8d492a4ae5ef)
