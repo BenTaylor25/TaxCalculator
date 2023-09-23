@@ -169,7 +169,7 @@ apply here even though the base band numbers are the same.*
 National Income is calculated based on `Gross_Salary`,
 not (`Gross_Salary` - `Income_Tax`).
 
-### Calculation
+### National Insurance Calculation
 
 The National Insurance calculation is done in the same way as Income Tax.  
 Let's continue with the `£110,000` Gross Salary example:
@@ -198,4 +198,35 @@ the band values.
 
 And if we check this against the program, the numbers once again align.  
 ![image](https://github.com/BenTaylor25/TaxCalculator/assets/97246704/36f3eab7-1b5c-4cb9-ba13-c08cc577660b)
+
+
+## Employer National Insurance
+
+As mentioned in the Basics, Employers pay a National Insurance contribution
+on top of Gross_Salary.
+Since the words "Employee" and "Employer" look so similar,
+I will use the term "Company" instead of "Employer" from now of,
+even though this isn't always strictly accurate.
+
+Employer National Insurance relies on the same Categories as
+Employee National Insurance however the bands are completely different.  
+https://www.gov.uk/national-insurance-rates-letters
+
+Luckily, this is much easier to calculate than Income Tax or Employee NI.
+
+For Category A - the most common - company National Insurance contribution
+is simply 13.8% of earnings over £9,100.
+
+### Company National Insurance Calculation
+
+Gross_Salary = £110,000
+
+Amount_Over_9100 = £110,000 - £9,100
+    = £100,900
+Amount_At_Rate = Amount_Over_9100 * 0.138
+    = £100,900 * 0.138
+    = £13,924.20
+
+Since there is only once band:  
+Company_National_Insurance = £13,924.20
 
