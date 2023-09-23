@@ -109,6 +109,28 @@ Bands:
 
 That's the hard part of Income Tax out of the way, but we still need to add up the numbers.  
 You may or may not find this intuitive, but I found that this diagram helps.
-![image](https://github.com/BenTaylor25/TaxCalculator/assets/97246704/79716322-d07f-4318-b154-6d0e787041ee)
+![image](https://github.com/BenTaylor25/TaxCalculator/assets/97246704/79716322-d07f-4318-b154-6d0e787041ee)  
+*(not to scale)*
 
+We can clearly see from this that we have £7,579 in the 0% band.  
+0% of £7,579 is £0.
 
+The amount in the 20% band is the `Band_Max - Band_Min`.  
+£45,279 - £7,579 = £37,700.  
+This means that we have £37,700 in this band.  
+20% of £37,700 is £7,540.
+
+The amount in the 40% band is calculated slightly differently because the Gross_Salary is less than the `Band_Max`.  
+We use `Gross_Salary - Band_Min`.  
+Or in general `min(Gross_Salary, Band_Max) - Band_Min`.  
+£110,000 - £45,279 = £64,721.  
+So we have £64,721 in the 40% band.  
+40% of £64,721 is £25,888.40.
+
+Since the Gross_Salary is less than the 45% Band_Min, our general formula from above will give us a negative number (which is not right) - to fix this, we can take the larger of the value and 0.  
+`max(0, min(Gross_Salary, Band_Max) - Band_Min)`.  
+We have £0 in the 45% band.
+45% of £0 is £0.
+
+Our total Income Tax payment is the sum of these bands:  
+£0 + £7,540 + £25,888.40 + £0 = £33,428.40.
