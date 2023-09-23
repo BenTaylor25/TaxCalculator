@@ -254,7 +254,7 @@ Types of Salary Sacrifice include:
 
 ### Impact on Income Tax and National Insurance
 
-I am using the term "Subtotal" for post-sacrifice, pre-tax figure.  
+I am using the term "Subtotal" to mean the post-sacrifice, pre-tax figure.  
 `Subtotal = Gross_Salary - Sacrificed_Amount`
 
 This changes the Net Salary formula to:  
@@ -266,16 +266,16 @@ National Insurance (Employee and Company) *should* also be calculated
 based on the Subtotal, however when I did some testing with the
 ListenToTaxman site's `Pension Contribution` field, the numbers only
 seemed to add up when National Insurance was calculated from Gross.  
-I'm not sure if this is an issue with the calculator,
+I'm not sure if this is an issue with their calculator,
 or if I'm missing something.
 
 
 ### Pension schemes
 
 This may depend on the particular scheme, but it seems to me that
-you don't pay any tax on sacrifice, however you pension claims
+you don't pay any tax on sacrifice, however your pension claims
 are considered a source of income, so you pay Income Tax, and
-possibly National Insurance contribution then.
+possibly National Insurance contribution them.
 
 
 ### Company Car schemes
@@ -285,7 +285,7 @@ annual P11D (recommended price) value of the car you wish to
 buy. They invoke a BIK Tax (Benefit in Kind) which is deducted
 in the same place as Income Tax and National Insurance.
 
-`Take_Home = Gross_Salary - Income_Tax - National_Insurance - BIK_Tax`
+`Take_Home = Subtotal - Income_Tax - National_Insurance - BIK_Tax`
 
 Every car has a P11D and a BIK percentage
 (based off of emmissions for fuel and hybrid cars, or range for electric cars)
@@ -301,6 +301,10 @@ i.e. `BIK_Tax = Car_Tax_Value * Highest_Tax_Band`
 This means that someone earning £150,000 will pay more BIK_Tax than
 someone earning £30,000 for the same car.
 
-It also means that if the annual P11D brings you down a tax band,
-you make a huge saving over buying the car with your Net Salary
-without the scheme.
+It also means that if the annual P11D (the Sacrifice amount)
+brings you down a tax band, you make a huge saving over buying
+the car with your Net Salary without the scheme.
+
+I couldn't get my numbers to align properly,
+but this site seems quite good if you wish to look into this further.  
+https://comcar.co.uk/taxtools/salarysacrifice/
