@@ -196,5 +196,6 @@ Again, the total National Insurance Payment is the sum of
 the band values.  
 £4,524 + £1,194.60 = £5,718.60
 
-And if we check this against the program, the numbers once again align.
+And if we check this against the program, the numbers once again align.  
+![image](https://github.com/BenTaylor25/TaxCalculator/assets/97246704/36f3eab7-1b5c-4cb9-ba13-c08cc577660b)
 
