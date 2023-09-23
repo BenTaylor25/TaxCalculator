@@ -230,3 +230,4 @@ Amount_At_Rate = Amount_Over_9100 * 0.138
 Since there is only once band:  
 Company_National_Insurance = £13,924.20
 
+![image](https://github.com/BenTaylor25/TaxCalculator/assets/97246704/4bb2a189-111c-460b-a72b-75e9be87aa89)
