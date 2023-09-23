@@ -40,8 +40,8 @@ With a Gross Salary of £100,000 this is about `£112,544.20`.
 
 ### Tax Bands
 
-The government website (https://www.gov.uk/income-tax-rates) suggests the following:
-
+The government website (https://www.gov.uk/income-tax-rates) suggests the following:  
+![image](https://github.com/BenTaylor25/TaxCalculator/assets/97246704/4d21e5b9-1504-4b30-9a83-8ab77aacf398)  
 Unfortunately it is nowhere near as simple as this.
 
 These bands are dependent on your Tax Band
