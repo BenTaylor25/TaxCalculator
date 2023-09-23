@@ -59,7 +59,7 @@ def calc_income_tax(gross: float, debug_mode: bool = True) -> float:
     for b in tax_bands:
         band = tax_bands[b]
         amount_in_band = min(gross - gross_so_far, band["band_max"] - band["band_min"])
-        print(f"Amount in Band {band['band_rate']*100}%: {cur(amount_in_band)}")
+        print(f"Amount in Band {int(band['band_rate']*100)}%: {cur(amount_in_band)}")
         gross_so_far += amount_in_band
 
         tax_from_band = amount_in_band * band["band_rate"]
