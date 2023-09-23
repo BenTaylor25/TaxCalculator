@@ -95,13 +95,13 @@ Bands Formula:
 £0 - Tax_Free_Allowance at 0%
 Tax_Free_Allowance - (50,279 - PA_Loss) at 20%
 (50,279 - PA_Loss) - £125,140 at 40%
->£125,140 at 45%
+£125,140+ at 45%
 
 Bands:
 £0 - £7,579 at 0%
 £7,579 - £45,279 at 20%
 £45,279 - £125,140 at 40%
->£125,140 at 45%
+£125,140+ at 45%
 ```
 (All-caps values mean independent of Gross_Salary).
 
@@ -137,3 +137,64 @@ Our total Income Tax payment is the sum of these bands:
 
 If you run the calculator program with the input `£110,000` you will see the same figures:  
 ![image](https://github.com/BenTaylor25/TaxCalculator/assets/97246704/098c461a-3d10-483b-a316-8d492a4ae5ef)
+
+
+## Employee National Insurance
+
+### Categories
+
+On top of Income Tax, employees also have to pay a National Insurance contribution.
+
+National Insurance has Classes/Categories - similar to Income Tax codes.  
+https://www.gov.uk/national-insurance-rates-letters/category-letters
+
+There are many different NI Categories, but the most common is A.  
+Not only this, but a few other codes have the same rates as A
+(at least for Employee NI), e.g.  
+1. H - Apprentices under 25,
+1. M - Employees under 21,
+1. V - Employees whose previous role was in the armed forces.
+
+https://www.gov.uk/national-insurance-rates-letters  
+
+These classes pay:
+```
+£0 - £12,570 at 0%
+£12,570 - £50,270 at 12%
+£50,270+ at 2%
+```
+*Note: the Income Tax offset of 9 that we were using before doesn't
+apply here even though the base band numbers are the same.*
+
+National Income is calculated based on `Gross_Salary`,
+not (`Gross_Salary` - `Income_Tax`).
+
+### Calculation
+
+The National Insurance calculation is done in the same way as Income Tax.  
+Let's continue with the `£110,000` Gross Salary example:
+
+Gross_Salary = £110,000
+
+Gross_Salary > £12,570, so we reach the 12% band.  
+Gross_Salary > £50,270, so we use `Band_Max` - `Band_Min` to get the amount in the band.
+
+Twelve_Percent_Band_Amount = £50,270 - £12,570  
+    = £37,700  
+NI_At_Twelve_Percent = Twelve_Percent_Band_Amount * 0.12  
+    = £4,524
+
+Gross_Salary > £50,270, so we reach the 2% band.  
+The 2% band is the top band, so we use `Gross_Salary` - `Band_Min` to get the amount in the band.
+
+Two_Percent_Band_Amount = £110,000 - £50,270  
+    = £59,730  
+NI_At_Two_Percent = Two_Percent_Band_Amount * 0.02  
+    = £1,194.60
+
+Again, the total National Insurance Payment is the sum of
+the band values.  
+£4,524 + £1,194.60 = £5,718.60
+
+And if we check this against the program, the numbers once again align.
+
