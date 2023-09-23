@@ -99,10 +99,15 @@ Tax_Free_Allowance - (50,279 - PA_Loss) at 20%
 
 Bands:
 £0 - £7,579 at 0%
-£7,579 - $45,279 at 20%
+£7,579 - £45,279 at 20%
 £45,279 - £125,140 at 40%
 >£125,140 at 45%
 ```
 (All-caps values mean independent of Gross_Salary).
+
+## Income Tax Calculation
+
+That's the hard part of Income Tax out of the way, but we still need to add up the numbers.  
+You may or may not find this intuitive, but I found that this diagram helps.
 
 
