@@ -308,3 +308,16 @@ the car with your Net Salary without the scheme.
 I couldn't get my numbers to align properly,
 but this site seems quite good if you wish to look into this further.  
 https://comcar.co.uk/taxtools/salarysacrifice/
+
+
+# Conclusion
+
+I would like to reiterate that I am not an accountant and that this
+calculator and this method should not be used in a professional setting
+without the approval of a qualified individual.
+
+I hope this was able to demystify the UK tax system somewhat.  
+Please let me know via the
+[Issues](https://github.com/BenTaylor25/TaxCalculator/issues) tab
+if there is any section that is incorrect or unclear,
+and I will try to resolve it.
