@@ -109,5 +109,6 @@ Bands:
 
 That's the hard part of Income Tax out of the way, but we still need to add up the numbers.  
 You may or may not find this intuitive, but I found that this diagram helps.
+![image](https://github.com/BenTaylor25/TaxCalculator/assets/97246704/79716322-d07f-4318-b154-6d0e787041ee)
 
 
